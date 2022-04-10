@@ -1,143 +1,219 @@
- @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&family=Raleway:wght@300;400;500;600;800;900&display=swap');
- /*général*/
- 
- * {
-     box-sizing: border-box;
-     font-family: 'Raleway';
- }
- 
- a {
-     text-decoration: none;
-     color: inherit;
-     ;
- }
- /*1ere partie*/
- 
- nav {
-     display: flex;
-     align-items: center;
-     justify-content: flex-end;
- }
- 
- nav a {
-     height: 80px;
-     padding: 10px;
- }
- 
- #logo {
-     /*logo prendre toute la place à gauche*/
-     margin-right: auto;
-     padding: 0 70px;
- }
- 
- .Accommodation {
-     height: 80px;
-     color: #0065fc;
- }
- 
- .Accommodation:hover {
-     border-top: 3px solid #0065fc;
- }
- 
- .bleu:hover {
-     /*erreur je n'arrive pas à faire pointer en bleu à l'aide du curseur*/
-     color: #0065fc;
- }
- /*2partie*/
- 
- .wrapper {
-     padding: 0 50px;
- }
- /*search*/
- 
- .search * {
-     padding: 15px;
-     font-weight: bold;
-     font-size: 20px;
- }
- 
- .search {
-     display: flex;
-     align-items: center;
- }
- 
- .search i {
-     background-color: #f2f2f2;
-     border-radius: 10px 0 0 10px;
- }
- 
- .search input::placeholder {
-     font-size: 15px;
-     color: black;
- }
- 
- .search button {
-     border-radius: 0 10px 10px 0px;
-     background-color: #0065fc;
-     color: white;
-     cursor: pointer;
-     transition: transform 200ms;
- }
- 
- .search button:hover {
-     background-color: #DEEBFF;
-     transform: scale(1.03);
- }
- /*filtres*/
- 
- .list {
-     display: flex;
-     align-items: center;
-     gap: 20px;
-     /*écart de grille css*/
-     flex-wrap: wrap;
-     /*sur une seule ligne ou sur plusieurs ligne avec retour automatique*/
- }
- 
- .filtre .fas {
-     color: blue;
-     background-color: dodgerblue;
-     border-radius: 50%;
-     width: 50px;
-     height: 50px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- 
- .filtre {
-     width: 250px;
-     margin: 40px;
-     border: solid 2px #f2f2f2;
-     border-radius: 40px;
-     display: flex;
-     align-items: center;
- }
- 
- .filtre span {
-     margin: 15px;
-     font-weight: bold;
- }
- 
- .filtre:hover {
-     background-color: #DEEBFF;
-     transform: scale(1.03);
- }
- /*Info logements*/
- 
- .info {
-     display: flex;
-     align-items: center;
-     gap: 20px;
- }
- 
- .info .fa-solid {
-     color: #0065fc;
-     width: 20px;
-     height: 20px;
-     border: 2px solid #F2F2F2;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&family=Raleway:wght@300;400;500;600;800;900&display=swap');
+
+/*général*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    ;
+}
+
+
+/*1ere partie*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a {
+    height: 80px;
+    padding: 10px;
+}
+
+#logo {
+    /*logo prendre toute la place à gauche*/
+    margin-right: auto;
+    padding: 0 70px;
+}
+
+.Accommodation {
+    height: 80px;
+    color: #0065fc;
+}
+
+.Accommodation:hover {
+    border-top: 3px solid #0065fc;
+}
+
+.bleu:hover {
+    /*erreur je n'arrive pas à faire pointer en bleu à l'aide du curseur*/
+    color: #0065fc;
+}
+
+
+/*2partie*/
+
+.wrapper {
+    padding: 0 50px;
+}
+
+
+/*search*/
+
+.search * {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search i {
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+}
+
+.search input::placeholder {
+    font-size: 15px;
+    color: black;
+}
+
+.search button {
+    border-radius: 0 10px 10px 0px;
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+.search button:hover {
+    background-color: #DEEBFF;
+    transform: scale(1.03);
+}
+
+
+/*filtres*/
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*écart de grille css*/
+    flex-wrap: wrap;
+    /*sur une seule ligne ou sur plusieurs ligne avec retour automatique*/
+}
+
+.filtre .fas {
+    color: blue;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtre {
+    width: 250px;
+    margin: 40px;
+    border: solid 2px #f2f2f2;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.filtre span {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.filtre:hover {
+    background-color: #DEEBFF;
+    transform: scale(1.03);
+}
+
+
+/*Info logements*/
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info .fa-solid {
+    color: #0065fc;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*appartements List*/
+
+.appartements-list {
+    display: flex;
+    gap: 16px;
+}
+
+.appartements-list>div {
+    border: 1px solid red;
+    /*A RETIRER PLUS TARD*/
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+.appartements-list .ville {
+    flex-basis: 800px;
+}
+
+.appartements-list .ville a {
+    font-weight: bold;
+}
+
+.appartements-list .popular {
+    flex-basis: 500px;
+}
+
+
+/*list appartement ville*/
+
+.ville-appartements-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+    /*ils prennent toute la places dans l'élément*/
+    padding: 40px;
+}
+
+.ville-appartements-list div {
+    border: 1px solid violet;
+    flex-basis: 200px;
+}
+
+
+/*popular*/
+
+.appartements-list .popular-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 16;
+}
+
+.appartements-list .popular-flex div {
+    border: 1px solid yellow;
+}
+
+
+/*appart-start*/
+
+.appart-stars .stars {
+    color: #0065fc;
+}
