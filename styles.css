@@ -1,219 +1,348 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&family=Raleway:wght@300;400;500;600;800;900&display=swap');
-
-/*général*/
-
-* {
-    box-sizing: border-box;
-    font-family: 'Raleway';
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    ;
-}
-
-
-/*1ere partie*/
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-nav a {
-    height: 80px;
-    padding: 10px;
-}
-
-#logo {
-    /*logo prendre toute la place à gauche*/
-    margin-right: auto;
-    padding: 0 70px;
-}
-
-.Accommodation {
-    height: 80px;
-    color: #0065fc;
-}
-
-.Accommodation:hover {
-    border-top: 3px solid #0065fc;
-}
-
-.bleu:hover {
-    /*erreur je n'arrive pas à faire pointer en bleu à l'aide du curseur*/
-    color: #0065fc;
-}
-
-
-/*2partie*/
-
-.wrapper {
-    padding: 0 50px;
-}
-
-
-/*search*/
-
-.search * {
-    padding: 15px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.search {
-    display: flex;
-    align-items: center;
-}
-
-.search i {
-    background-color: #f2f2f2;
-    border-radius: 10px 0 0 10px;
-}
-
-.search input::placeholder {
-    font-size: 15px;
-    color: black;
-}
-
-.search button {
-    border-radius: 0 10px 10px 0px;
-    background-color: #0065fc;
-    color: white;
-    cursor: pointer;
-    transition: transform 200ms;
-}
-
-.search button:hover {
-    background-color: #DEEBFF;
-    transform: scale(1.03);
-}
-
-
-/*filtres*/
-
-.list {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    /*écart de grille css*/
-    flex-wrap: wrap;
-    /*sur une seule ligne ou sur plusieurs ligne avec retour automatique*/
-}
-
-.filtre .fas {
-    color: blue;
-    background-color: dodgerblue;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.filtre {
-    width: 250px;
-    margin: 40px;
-    border: solid 2px #f2f2f2;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-}
-
-.filtre span {
-    margin: 15px;
-    font-weight: bold;
-}
-
-.filtre:hover {
-    background-color: #DEEBFF;
-    transform: scale(1.03);
-}
-
-
-/*Info logements*/
-
-.info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.info .fa-solid {
-    color: #0065fc;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #F2F2F2;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/*appartements List*/
-
-.appartements-list {
-    display: flex;
-    gap: 16px;
-}
-
-.appartements-list>div {
-    border: 1px solid red;
-    /*A RETIRER PLUS TARD*/
-    background-color: #F2F2F2;
-    padding: 15px;
-    border-radius: 16px;
-}
-
-.appartements-list .ville {
-    flex-basis: 800px;
-}
-
-.appartements-list .ville a {
-    font-weight: bold;
-}
-
-.appartements-list .popular {
-    flex-basis: 500px;
-}
-
-
-/*list appartement ville*/
-
-.ville-appartements-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: space-around;
-    /*ils prennent toute la places dans l'élément*/
-    padding: 40px;
-}
-
-.ville-appartements-list div {
-    border: 1px solid violet;
-    flex-basis: 200px;
-}
-
-
-/*popular*/
-
-.appartements-list .popular-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 16;
-}
-
-.appartements-list .popular-flex div {
-    border: 1px solid yellow;
-}
-
-
-/*appart-start*/
-
-.appart-stars .stars {
-    color: #0065fc;
-}
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&family=Raleway:wght@300;400;500;600;800;900&display=swap');
+    /*général*/
+    
+    * {
+        box-sizing: border-box;
+        font-family: 'Raleway';
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+        ;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    /*1ere partie NAVBAR*/
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    nav a {
+        display: block;
+        padding: 1em 2em;
+        text-decoration: none;
+        border-top: none;
+    }
+    
+    #logo {
+        /*logo prendre toute la place à gauche*/
+        height: 50px;
+        cursor: pointer;
+        padding-left: 25px;
+    }
+    
+    .Accommodation {
+        color: #0065fc;
+        font-family: 'Ralewaysemibold';
+    }
+    
+    .Accommodation:hover {
+        border-top: 3px solid #0065fc;
+    }
+    
+    .bleu:hover {
+        /*erreur je n'arrive pas à faire pointer en bleu à l'aide du curseur*/
+        color: #0065fc;
+    }
+    /*2partie BODY*/
+    
+    .wrapper {
+        padding: 0 50px;
+    }
+    /*search*/
+    
+    .search * {
+        padding: 15px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .search {
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .search i {
+        background-color: #f2f2f2;
+        border-radius: 10px 0 0 10px;
+        cursor: pointer;
+    }
+    
+    .search input::placeholder {
+        font-size: 15px;
+        color: black;
+    }
+    
+    .search button {
+        border-radius: 0 10px 10px 0px;
+        background-color: #0065fc;
+        color: white;
+        cursor: pointer;
+        transition: transform 200ms;
+    }
+    
+    .search button:hover {
+        background-color: #DEEBFF;
+        transform: scale(1.03);
+    }
+    /*filtres*/
+    
+    .list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /*écart de grille css*/
+        flex-wrap: wrap;
+        /*sur une seule ligne ou sur plusieurs ligne avec retour automatique*/
+    }
+    
+    .filtre .fas {
+        color: #0065fc;
+        background-color: dodgerblue;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .filtre {
+        width: 235px;
+        margin: 8px;
+        border: solid 2px #f2f2f2;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .filtre span {
+        margin: 15px;
+        font-weight: bold;
+    }
+    
+    .filtre:hover {
+        background-color: #DEEBFF;
+        transform: scale(1.03);
+    }
+    /*Info logements*/
+    
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .info .fa-solid {
+        color: #0065fc;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #F2F2F2;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*appartements List*/
+    
+    .appartements-list {
+        display: flex;
+        gap: 16px;
+    }
+    
+    .appartements-list>div {
+        background-color: #F2F2F2;
+        padding: 15px;
+        border-radius: 16px;
+    }
+    
+    .appartements-list .ville {
+        flex-basis: 60%;
+    }
+    
+    .appartements-list .ville a {
+        font-weight: bold;
+    }
+    /*list appartement ville*/
+    
+    .ville-appartements-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-around;
+        /*ils prennent toute la places dans l'élément*/
+        padding: 15px;
+    }
+    /*popular*/
+    
+    @media (max-width:1300px) {
+        .appartements-list {
+            flex-direction: column;
+        }
+        .popular {
+            order: -1;
+        }
+    }
+    
+    .appartements-list .popular-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /*appart-start*/
+    
+    .appart-stars {
+        background-color: white;
+        border-radius: 16px;
+        padding: 8px;
+        box-shadow: 0 0 16px #0000002e;
+    }
+    
+    .appart-stars img {
+        border-radius: 16px 16px 0 0;
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+    
+    .blue {
+        color: #0065fc;
+    }
+    
+    .grey {
+        color: gray;
+    }
+    /*popular apart-starts*/
+    
+    .popular {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .popular-flex {
+        flex-basis: 100%;
+    }
+    
+    .popular-appart-stars {
+        display: flex;
+        background-color: white;
+        border-radius: 16px;
+        padding: 8px;
+        box-shadow: 0 0 16px #0000002e;
+    }
+    
+    .popular-appart-stars img {
+        height: 135px;
+        width: 87px;
+        object-fit: cover;
+        border-radius: 16px 0 0 16px;
+        margin-right: 16px;
+    }
+    
+    .popular-présentation h3 {
+        margin: 0px;
+        margin-bottom: -15px;
+    }
+    
+    .ppopular-présentation .stars {
+        margin-top: auto;
+    }
+    
+    .popular-appart-stars {
+        min-width: 240px;
+    }
+    
+    .popular h3 {
+        display: flex;
+        justify-content: space-around;
+    }
+    /*ACTIVITE à Marseilles*/
+    
+    .marseille-activities {
+        height: 550px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        grid-gap: 30px;
+        grid-template-areas: "activity-1 activity-2 activity-4 activity-5" "activity-1 activity-2 activity-4 activity-5" "activity-1 activity-2 activity-4 activity-6" "activity-1 activity-2 activity-4 activity-6" "activity-1 activity-3 activity-4 activity-6" "activity-1 activity-3 activity-4 activity-6"
+    }
+    
+    .marseille-activities .activity_full-card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 17px -9px rgba(0, 0, 0, 0.75);
+    }
+    
+    .activity_full-card img {
+        object-fit: cover;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .marseille-activities .lieu-gras {
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        border-radius: 0 0 20px 20px;
+        padding: 0px 0 20px 5%;
+        margin: 0;
+        bottom: 0;
+    }
+    
+    .englobe {
+        height: 100%;
+        margin: 0;
+    }
+    
+    #activity-1 {
+        grid-area: activity-1;
+    }
+    
+    #activity-2 {
+        grid-area: activity-2;
+    }
+    
+    #activity-3 {
+        grid-area: activity-3;
+    }
+    
+    #activity-4 {
+        grid-area: activity-4;
+    }
+    
+    #activity-5 {
+        grid-area: activity-5;
+    }
+    
+    #activity-6 {
+        grid-area: activity-6;
+    }
+    
+    .marseille-activities .activity_full-card:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: ease 0.4s;
+    }
+    /*dernier partie footer*/
+    
+    .footer {
+        background-color: lightgray;
+        width: 100%;
+        display: flex;
+        gap: 162px;
+    }
