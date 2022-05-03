@@ -54,6 +54,7 @@ body {
 
 .relative {
     position: relative;
+    height: 48px;
 }
 
 .absolue {
@@ -71,11 +72,19 @@ body {
     color: #DEEBFF;
 }
 
+.fe-bleu-f {
+    background-color: #0065FC;
+}
+
 .gris {
     color: rgb(199, 198, 198);
 }
 
 .fe-gris {
+    background-color: #F2F2F2;
+}
+
+.fe-griss {
     background-color: #F2F2F2;
 }
 
@@ -97,6 +106,10 @@ a {
 
 .gras {
     font-weight: 700;
+}
+
+.bordurenone {
+    border: none;
 }
 
 
@@ -187,36 +200,45 @@ h1[class='gras'] {
 /*zone du bouton*/
 
 .search {
-    display: inline-flex;
-    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.search input::placeholder {
-    font-size: 15px;
+.borduresearch {
+    width: 360px;
+    height: 50px;
+    margin-left: -7px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2;
+}
+
+.paddingsearch {
+    padding-left: 20px;
+}
+
+.recherche {
+    height: 47px;
+    margin: 1px;
+    width: 194px;
+    font-size: 17px;
     color: black;
+    font-weight: bold;
 }
 
-.search button {
-    display: inline;
-    border-radius: 0 10px 10px 0px;
-    font-size: 20px;
-    background-color: #0065fc;
+.iconsize {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.buttonsearch {
+    height: 50px;
+    width: 120px;
     color: white;
     cursor: pointer;
-    transition: transform 200ms;
-}
-
-.search button:hover {
-    background-color: #DEEBFF;
-    transform: scale(1.03);
-}
-
-.search i {
-    font-size: 16px;
-    background-color: #f2f2f2;
-    border-radius: 10px 0 0 10px;
-    padding: 11px;
-    cursor: pointer;
+    border-radius: 0 10px 10px 0;
 }
 
 
@@ -226,6 +248,7 @@ h1[class='gras'] {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: 80px;
     /*écart de grille css*/
     flex-wrap: wrap;
     /*sur une seule ligne ou sur plusieurs ligne avec retour automatique*/
@@ -271,7 +294,7 @@ h1[class='gras'] {
 /* information corp */
 
 aside[class='info flexible'] {
-    margin: 30px 0 35px 3px;
+    margin: 30px 0 35px 71px;
 }
 
 .info {
@@ -410,9 +433,9 @@ span {
 /*les plus populaires*/
 
 .populaire h2 {
-    margin: 0 5%;
-    font-size: 1.4em;
-    padding-top: 38px;
+    margin: 0 0%;
+    font-size: 23px;
+    padding-top: Opx;
 }
 
 .populaire h2 i {
@@ -583,10 +606,11 @@ span {
 .pied-de-page {
     padding-bottom: 40px;
     padding-top: 10px;
-    line-height: 0.75em;
+    line-height: 15 px;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 0 1.3%;
+    margin: 0;
+    padding: 20px;
 }
 
 .pied-de-page section {
@@ -606,13 +630,54 @@ span {
 }
 
 
-/* media 820px à 1349px */
+/* media 100px à 1023px */
 
 @media screen and (min-width: 100px) and (max-width: 1023px) {
+    /*search*/
+    .corp {
+        margin-left: 24px;
+    }
+    .borduresearch {
+        width: 297px;
+        border-radius: 15px;
+    }
+    .buttonsearch {
+        width: 50px;
+        border-radius: 15px;
+    }
+    .desktopnone {
+        display: block;
+        color: white;
+        cursor: pointer;
+        align-items: center;
+    }
+    .mobilenone {
+        display: none;
+    }
     /*filtres*/
     .list {
         flex-direction: column;
         align-items: flex-start;
+        gap: 0px;
+        margin-left: 10px
+    }
+    .filt {
+        margin-left: 14px;
+    }
+    .fe-gris {
+        background-color: #F2F2F2;
+        margin: 0px;
+        padding: 12px;
+    }
+    .info flexible {
+        margin-left: 47px;
+    }
+    .info p {
+        margin: 3px 0 18px 1px;
+        margin-left: 6px;
+    }
+    .populaire h2 {
+        margin: -1px 12px 0 21px;
     }
     /* article */
     .ensemble-carte-informative-article {
@@ -620,6 +685,11 @@ span {
     }
     .carte-informative-article {
         width: 42.5%;
+    }
+    .carte-informative-populaire {
+        margin: 11px 0px 12px 0;
+        margin-left: 38px;
+        width: 350px;
     }
     /* activité */
     .carte-activité {
@@ -657,7 +727,7 @@ span {
         }   */
     /* body */
     body {
-        max-width: 1600px;
+        max-width: 1930px;
     }
     /* menu logo */
     /* logo */
@@ -701,6 +771,9 @@ span {
         margin: 0 0 0 83px;
         padding-bottom: 0;
     }
+    .desktopnone {
+        display: none;
+    }
     /* slogan */
     .p-un {
         line-height: 1.1em;
@@ -722,9 +795,9 @@ span {
         max-width: 61%;
         padding: 0 1%;
         min-height: 100%;
-        WIDTH: 850px;
+        width: 850px;
     }
-    article h2 {
+    .article h2 {
         padding-top: 20px;
         margin: 18px 0 10px 3%;
     }
@@ -750,10 +823,11 @@ span {
     .populaire {
         max-width: 29%;
         border-radius: 20px;
-        padding: 0;
+        padding: 0px;
         min-height: 100%;
         margin-top: 0;
-        width: 385px;
+        width: 410px;
+        margin-right: 450px;
     }
     .populaire h2 {
         padding-top: 20px;
@@ -771,7 +845,9 @@ span {
         width: 84%;
     }
     .carte-informative-populaire {
-        width: 100%;
+        margin: 0px 0px 6px 0;
+        margin-left: 17px;
+        width: 350px;
     }
     .carte-informative-populaire img {
         width: 100%;
@@ -784,7 +860,7 @@ span {
     }
     /* activité */
     .activité {
-        margin: 0 3.4% 0 3.4%;
+        margin: 0 26.4% 0 3.4%;
     }
     .activité h3 {
         margin: 60px 3.5% 22px 3.5%;
