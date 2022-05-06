@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
-
-<link href="styles.css" rel="stylesheet">
-<!--lien vers la page css et son style préféré-->
-<link href="https//fonts.google.com/specimen/Raleway">
+<html lang="fr">
 
 <head>
-
+    <link href="styles.css" rel="stylesheet">
+    <!--lien vers la page css et son style préféré-->
+    <link rel="stylesheet" href="https//fonts.google.com/specimen/Raleway">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/453545d962.js" crossorigin="anonymous"></script>
     <!--affiche le contenu en fonction de l'appreil-->
     <title>Booki</title>
@@ -16,7 +15,8 @@
 <body>
     <header>
         <!--icone + menu-->
-        <section class="logo-menu flexible relative">
+
+        <div class="logo-menu flexible relative">
 
             <figure class='absolue'>
                 <img src="images/logo/Booki@3x.png" alt="logo">
@@ -33,7 +33,7 @@
                     </li>
                 </ul>
             </nav>
-        </section>
+        </div>
 
 
         <!--2 partie corps tête de page-->
@@ -83,14 +83,11 @@
 
         </section>
 
-        </section>
-
         <!--logo + information-->
         <aside class='info flexible'>
             <a href='#'><i class="fas fa-info bleu centrer"></i></a>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </aside>
-        </section>
     </header>
     <!--hébergement + les plus populaires-->
     <main class="main-section flexible">
@@ -102,7 +99,7 @@
             <h2 id="chambre">Hébergement à Marseille</h2>
 
             <!-- ensemble de carte -->
-            <section class='ensemble-carte-informative-article flexible'>
+            <div class='ensemble-carte-informative-article flexible'>
 
                 <!--Carte Informative -->
                 <a href='#' class='carte-informative-article'>
@@ -177,7 +174,7 @@
                         <i class="fas fa-star bleu"></i>
                     </p>
                 </a>
-            </section>
+            </div>
             <!-- filtre d'affichage -->
             <p class='plus gras'><a href='#'>Afficher plus</a></p>
 
@@ -191,7 +188,7 @@
             <h2 class='relative'>Les plus populaires <a href='#'><i class="fas fa-chart-line absolue"></i></a></h2>
 
             <!--Carte Informative-->
-            <section>
+            <div>
 
                 <a href='#' class='carte-informative-populaire flexible'>
                     <p class='soleil'>
@@ -234,7 +231,7 @@
                         <i class="fas fa-star gris"></i>
                     </p>
                 </a>
-            </section>
+            </div>
         </aside>
     </main>
 
@@ -245,7 +242,7 @@
         <h3 id="paysage">Activités à Marseille</h3>
 
         <!--Carte Informative-->
-        <section class='carte-activité flexible'>
+        <div class='carte-activité flexible'>
 
             <a href='#' class='carte-informative3'>
                 <p class='vieuxport'>
@@ -283,27 +280,29 @@
                 </p>
                 <p class='lieu gras'>Parc Longchamp</p>
             </a>
-        </section>
+        </div>
     </aside>
 
     <!--pied de page-->
-    <footer class='pied-de-page flexible foot-gris'>
-        <section>
-            <h4>À propos</h4>
-            <p><a href='#'>Fonctionnement du site</a></p>
-            <p><a href='#'>Condition générales de vente</a></p>
-            <p><a href='#'>Données et confidentialité</a></p>
-        </section>
-        <section>
-            <h4>Nos hébergements</h4>
-            <p><a href='#'>Charte qualité</a></p>
-            <p><a href='#'>Soumettre votre hôtel</a></p>
-        </section>
-        <section>
-            <h4>Assistance</h4>
-            <p><a href='#'>Centre d'aide</a></p>
-            <p><a href='#'>Nous contacter</a></p>
-        </section>
+    <footer class='footer flexible foot-gris'>
+        <div class="ensemble-footer">
+            <section class="footer1">
+                <h4>À propos</h4>
+                <p><a href='#'>Fonctionnement du site</a></p>
+                <p><a href='#'>Condition générales de vente</a></p>
+                <p><a href='#'>Données et confidentialité</a></p>
+            </section>
+            <section class="footer2">
+                <h4>Nos hébergements</h4>
+                <p><a href='#'>Charte qualité</a></p>
+                <p><a href='#'>Soumettre votre hôtel</a></p>
+            </section>
+            <section class="footer3">
+                <h4>Assistance</h4>
+                <p><a href='#'>Centre d'aide</a></p>
+                <p><a href='#'>Nous contacter</a></p>
+            </section>
+        </div>
     </footer>
 </body>
 
