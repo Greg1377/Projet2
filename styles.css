@@ -4,7 +4,7 @@
                 /*:root{ /*
         --couleur bleu-f: #0065FC;  
         --couleur-bleu-c: #DEEBFF;
-        --couleur-gris-c: #F2F2F2;
+        --couleur-gris-f: #F2F2F2;
         --couleur: black;  
                                 */
                 /* bordure */
@@ -565,9 +565,9 @@
                 .pied-de-page section a:hover {
                     color: gray;
                 }
-                /* media en dessous de 800px */
+                /* media en dessous de 767px MOBILE */
                 
-                @media (max-width: 800px) {
+                @media (max-width: 767px) {
                     /*search*/
                     .corp {
                         margin-left: 24px;
@@ -677,8 +677,9 @@
                         padding: 0px 0 0px 0;
                     }
                 }
+                /* media en dessous de 768px à 992 adapté pour tablette */
                 
-                @media screen and (min-width: 820px) and (max-width:1028px) {
+                @media screen and (min-width: 768px) and (max-width:992px) {
                     .fe-gris {
                         background-color: red;
                         padding: 37px;
@@ -719,9 +720,9 @@
                         padding: 2rem;
                     }
                 }
-                /* media au dessus de 1030px */
+                /* media au dessus de 992px DESKTOP */
                 
-                @media screen and (min-width: 1030px) {
+                @media screen and (min-width: 992px) {
                     /*  :root{
             --p: 0.79em;
             --pprix: 0.69em;
